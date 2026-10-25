@@ -1,0 +1,22 @@
+{
+  "name": "Olania — Olaf & Lana PM Buddy",
+  "short_name": "Olania",
+  "description": "Tu memoria externa persistente con Olaf y Lana para gestionar tus proyectos y reuniones de Bluedot.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafaf9",
+  "theme_color": "#7c3aed",
+  "icons": [
+    {
+      "src": "/pets/olaf-happy.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/pets/lana-sassy.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

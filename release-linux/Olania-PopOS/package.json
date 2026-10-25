@@ -1,0 +1,38 @@
+{
+  "name": "olania",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Olania (Olaf + Lana) - Asistente personal flotante e insistente para Project Managers",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "electron:dev": "concurrently -k \"vite --port 5173\" \"wait-on tcp:5173 && OLANIA_DEV=1 electron .\"",
+    "electron": "electron .",
+    "build:mac": "npm run build && rm -rf Olania.app && cp -R node_modules/electron/dist/Electron.app Olania.app && mkdir -p Olania.app/Contents/Resources/app && cp package.json Olania.app/Contents/Resources/app/ && cp -R electron dist Olania.app/Contents/Resources/app/ && cp /tmp/olania.iconset/../* 2>/dev/null || true && codesign --force --deep --sign - Olania.app"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.36.0",
+    "canvas-confetti": "^1.9.3",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "electron": "^33.2.1",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "wait-on": "^8.0.1"
+  }
+}

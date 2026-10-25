@@ -1,0 +1,21 @@
+===================================================================
+🐾 OLANIA (OLAF + LANA) PARA LINUX POP!_OS
+===================================================================
+
+Tienes 2 formas súper fáciles de instalarla en tu Pop!_OS:
+
+OPCIÓN 1: INSTALADOR AUTOMÁTICO EN TU MENÚ Y DOCK DE POP!_OS
+-------------------------------------------------------------------
+1. Descomprime este archivo en tu ordenador con Pop!_OS.
+2. Abre una terminal dentro de esta carpeta y ejecuta:
+   ./instalar-en-popos.sh
+3. ¡Listo! Ya te aparecerá "Olania" con el icono de Olaf en el lanzador
+   de aplicaciones de Pop!_OS (tecla Super) para fijarla a tu Dock.
+   * Si tienes Node.js instalado en Pop!_OS, se abrirá con ventana 100%
+     transparente flotando en la esquina inferior derecha.
+   * Si no tienes Node.js, se abrirá automáticamente como WebApp independiente.
+
+OPCIÓN 2: DESDE EL NAVEGADOR (COMO PWA)
+-------------------------------------------------------------------
+Si la abres en Chrome / Brave / Chromium en Pop!_OS, pulsa el botón
+"📲 Instalar como WebApp" o el icono de instalar en la barra de URL.
